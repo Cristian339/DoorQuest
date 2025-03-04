@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 6dd23456f01ab9a4582ade3272b544ed
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dungeon Tile Set_77
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5ec23fe837bb74c98c56ef95f161b8
+      internalID: -1662748289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Tile Set 1_0
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112e0791b8ccd8c4085f1a988efec307
+      internalID: 1284349998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dungeon Tile Set 1_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6ff2012afbf3541b5025c99b7ca206
+      internalID: -1892925216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dungeon Tile Set 1_0: 1284349998
+      Dungeon Tile Set 1_1: -1892925216
+      Dungeon Tile Set 1_2: 1761655882
+      Dungeon Tile Set_0: 1025957917
+      Dungeon Tile Set_1: -1391740897
+      Dungeon Tile Set_10: 2017352397
+      Dungeon Tile Set_100: -1951263253
+      Dungeon Tile Set_101: -1078020375
+      Dungeon Tile Set_102: -1792248308
+      Dungeon Tile Set_103: 286226503
+      Dungeon Tile Set_104: -185662240
+      Dungeon Tile Set_105: -83745074
+      Dungeon Tile Set_106: 514363318
+      Dungeon Tile Set_107: 361783663
+      Dungeon Tile Set_108: 1363764776
+      Dungeon Tile Set_109: -484600626
+      Dungeon Tile Set_11: -1430020418
+      Dungeon Tile Set_110: -1171107389
+      Dungeon Tile Set_111: 701849489
+      Dungeon Tile Set_112: 1745789620
+      Dungeon Tile Set_113: -20566347
+      Dungeon Tile Set_114: -30674181
+      Dungeon Tile Set_115: -1059021970
+      Dungeon Tile Set_116: -37125947
+      Dungeon Tile Set_117: -1739305774
+      Dungeon Tile Set_118: 30331655
+      Dungeon Tile Set_119: -139611374
+      Dungeon Tile Set_12: 1773610641
+      Dungeon Tile Set_120: 1396589373
+      Dungeon Tile Set_121: -1749825539
+      Dungeon Tile Set_122: 814335748
+      Dungeon Tile Set_123: -1635441702
+      Dungeon Tile Set_124: 1920371343
+      Dungeon Tile Set_125: -218641875
+      Dungeon Tile Set_126: 1769088150
+      Dungeon Tile Set_127: 1333812091
+      Dungeon Tile Set_128: 1296640421
+      Dungeon Tile Set_129: -812780859
+      Dungeon Tile Set_13: -833542091
+      Dungeon Tile Set_130: 1935031548
+      Dungeon Tile Set_131: 1389457796
+      Dungeon Tile Set_132: -2091089723
+      Dungeon Tile Set_14: -948037536
+      Dungeon Tile Set_15: 812762093
+      Dungeon Tile Set_16: -1888541813
+      Dungeon Tile Set_17: -1188385632
+      Dungeon Tile Set_18: 465006036
+      Dungeon Tile Set_19: -537178093
+      Dungeon Tile Set_2: 1858982109
+      Dungeon Tile Set_20: -114852847
+      Dungeon Tile Set_21: -2053890332
+      Dungeon Tile Set_22: 1575285604
+      Dungeon Tile Set_23: -246767453
+      Dungeon Tile Set_24: -1182981943
+      Dungeon Tile Set_25: 1479805106
+      Dungeon Tile Set_26: -1679984848
+      Dungeon Tile Set_27: -1556948017
+      Dungeon Tile Set_28: 1558766337
+      Dungeon Tile Set_29: 1898798303
+      Dungeon Tile Set_3: 202673524
+      Dungeon Tile Set_30: -696988226
+      Dungeon Tile Set_31: 97632678
+      Dungeon Tile Set_32: -1185765665
+      Dungeon Tile Set_33: 531786795
+      Dungeon Tile Set_34: -1157536242
+      Dungeon Tile Set_35: 1885674987
+      Dungeon Tile Set_36: 1166691306
+      Dungeon Tile Set_37: -1737180766
+      Dungeon Tile Set_38: -1220500783
+      Dungeon Tile Set_39: 704567187
+      Dungeon Tile Set_4: -2111946377
+      Dungeon Tile Set_40: 874958058
+      Dungeon Tile Set_41: -1540379742
+      Dungeon Tile Set_42: -1456117361
+      Dungeon Tile Set_43: -886746766
+      Dungeon Tile Set_44: 1184239
+      Dungeon Tile Set_45: 912846855
+      Dungeon Tile Set_46: 1829943152
+      Dungeon Tile Set_47: -1519366445
+      Dungeon Tile Set_48: -706325750
+      Dungeon Tile Set_49: 127596644
+      Dungeon Tile Set_5: 1413646920
+      Dungeon Tile Set_50: -911932578
+      Dungeon Tile Set_51: -951306209
+      Dungeon Tile Set_52: 1533783892
+      Dungeon Tile Set_53: -114671124
+      Dungeon Tile Set_54: 1602092978
+      Dungeon Tile Set_55: 1485134060
+      Dungeon Tile Set_56: -1941226258
+      Dungeon Tile Set_57: 1216226310
+      Dungeon Tile Set_58: 1512999452
+      Dungeon Tile Set_59: 1874986430
+      Dungeon Tile Set_6: 944732183
+      Dungeon Tile Set_60: 1709566885
+      Dungeon Tile Set_61: -1311345167
+      Dungeon Tile Set_62: 2014464812
+      Dungeon Tile Set_63: -1619763319
+      Dungeon Tile Set_64: 1308681141
+      Dungeon Tile Set_65: 946946312
+      Dungeon Tile Set_66: 329746555
+      Dungeon Tile Set_67: -879535039
+      Dungeon Tile Set_68: 603489607
+      Dungeon Tile Set_69: 1751968262
+      Dungeon Tile Set_7: -681626393
+      Dungeon Tile Set_70: -770741037
+      Dungeon Tile Set_71: -1360179940
+      Dungeon Tile Set_72: -809855926
+      Dungeon Tile Set_73: 787232002
+      Dungeon Tile Set_74: -1781303934
+      Dungeon Tile Set_75: -2136070834
+      Dungeon Tile Set_76: 752746877
+      Dungeon Tile Set_77: -1662748289
+      Dungeon Tile Set_78: 1375666909
+      Dungeon Tile Set_79: 1635476941
+      Dungeon Tile Set_8: -234467350
+      Dungeon Tile Set_80: -1311401305
+      Dungeon Tile Set_81: 1159230379
+      Dungeon Tile Set_82: 168467401
+      Dungeon Tile Set_83: 65714624
+      Dungeon Tile Set_84: 301649974
+      Dungeon Tile Set_85: 312331591
+      Dungeon Tile Set_86: 1613957337
+      Dungeon Tile Set_87: 818748916
+      Dungeon Tile Set_88: -678660728
+      Dungeon Tile Set_89: 750500005
+      Dungeon Tile Set_9: -1060028482
+      Dungeon Tile Set_90: -1320494142
+      Dungeon Tile Set_91: 335558329
+      Dungeon Tile Set_92: -549559733
+      Dungeon Tile Set_93: 48951781
+      Dungeon Tile Set_94: 1738814232
+      Dungeon Tile Set_95: -1122934280
+      Dungeon Tile Set_96: -28337876
+      Dungeon Tile Set_97: 1024825636
+      Dungeon Tile Set_98: 1702541321
+      Dungeon Tile Set_99: -640428069
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
