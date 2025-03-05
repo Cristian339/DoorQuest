@@ -14,14 +14,14 @@ public class UIController : MonoBehaviour
 
     public void UpdateScore(int score)
     {
-        scoreText1.text = $"Score: {score}";
-        scoreText2.text = $"Score: {score}";
+        scoreText1.text = $"Puntaje: {score}";
+        scoreText2.text = $"Puntaje: {score}";
     }
 
     public void ShowGameOver(int score)
     {
-        highScore1.text = $"High Score: {score}";
-        highScore2.text = $"High Score: {score}";
+        highScore1.text = $"Puntaje maximo: {score}";
+        highScore2.text = $"Puntaje maximo: {score}";
         gameOverPanel.SetActive(true);
     }
 
