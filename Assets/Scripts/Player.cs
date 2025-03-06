@@ -100,29 +100,34 @@ public class Player : MonoBehaviour
         livebar.value = liveSystem.Lives / 100f;
     }
 
-private void DieForFall()
-{
-    transform.position = positionBeforeFall;
-    liveSystem.TakeDamage(trapsDamage); 
-    OnDieByFall?.Invoke();
-}
-
-    public void FallInTrap()
+    private void DieForFall()
     {
-        anim.SetTrigger("hit");
-
-        if (Mathf.Abs(rb.linearVelocity.y) > 0)
-        {
-            rb.AddForce(Vector3.up * repulseForceWhenVertical, ForceMode2D.Impulse);
-        }
-        else
-        {
-            rb.AddForce(Vector3.up * repulseForceWhenHorizontal, ForceMode2D.Impulse);
-        }
-
-        liveSystem.TakeDamage(trapsDamage);
+        transform.position = positionBeforeFall;
+        liveSystem.TakeDamage(trapsDamage); 
+        PlayHitSound();
+        OnDieByFall?.Invoke();
     }
 
+public void FallInTrap()
+{
+    anim.SetTrigger("hit");
+
+
+    float adjustedRepulseForceVertical = repulseForceWhenVertical; 
+    float adjustedRepulseForceHorizontal = repulseForceWhenHorizontal;
+
+    if (Mathf.Abs(rb.linearVelocity.y) > 0)
+    {
+        rb.AddForce(Vector2.up * adjustedRepulseForceVertical, ForceMode2D.Impulse);
+    }
+    else
+    {
+        rb.AddForce(Vector2.up * adjustedRepulseForceHorizontal, ForceMode2D.Impulse);
+    }
+
+    liveSystem.TakeDamage(trapsDamage);
+    PlayHitSound();
+}
     private void Fall()
     {
         bool inGround = InGround();
