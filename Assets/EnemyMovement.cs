@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections; // Añade esto para usar IEnumerator
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -12,7 +13,6 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private bool canAttack = true;
-    private bool atacar;
     private bool enMovimiento = true;
     private bool stop = true;
 
@@ -24,37 +24,33 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-
-        if(stop){
+        if (stop)
+        {
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
             // Si el enemigo está demasiado lejos, no se mueve ni ataca
             if (distanceToPlayer > detectionRadius)
             {
                 enMovimiento = false;
-                atacar = false;
-            }else if (distanceToPlayer < detectionRadius)
+            }
+            else if (distanceToPlayer < detectionRadius)
             {
-                enMovimiento= true;
+                enMovimiento = true;
                 MoveTowardsPlayer();
                 // Si está en el rango de ataque, ataca
-                    if (distanceToPlayer <= attackRadius)
-                    {
-                        enMovimiento = false;
-                        atacar = true;
-                        AttackPlayer();
-                    }
-
+                if (distanceToPlayer <= attackRadius)
+                {
+                    enMovimiento = false;
+                    AttackPlayer();
+                }
             }
 
             // Actualiza la animación de movimiento
             animator.SetBool("enMovimiento", enMovimiento);
-            animator.SetBool("atacar", atacar);
-
-        }else{
-
+        }
+        else
+        {
             animator.SetBool("enMovimiento", false);
-            animator.SetBool("atacar", false);
         }
     }
 
@@ -71,15 +67,32 @@ public class EnemyMovement : MonoBehaviour
     {
         if (canAttack)
         {
-            Player playerScript = player.GetComponent<Player>();
-            if (playerScript != null) playerScript.TakeDamage(attackDamage);
+            // Activa la animación de ataque por un instante
+            animator.SetBool("atacar", true);
 
+            // Aplica el daño al jugador
+            Player playerScript = player.GetComponent<Player>();
+            if (playerScript != null)
+            {
+                playerScript.TakeDamage(attackDamage);
+            }
+
+            // Desactiva el ataque y comienza el cooldown
             canAttack = false;
             stop = false;
 
+            // Desactiva la animación de ataque en el siguiente frame
+            StartCoroutine(ResetAttackAnimationAfterDelay(0.7f)); // Ajusta el tiempo si es necesario
 
-            Invoke(nameof(ResetAttack), attackCooldown);  // Espera el cooldown y luego habilita el ataque
+            // Reinicia el ataque después del cooldown
+            Invoke(nameof(ResetAttack), attackCooldown);
         }
+    }
+
+    IEnumerator ResetAttackAnimationAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); // Espera el tiempo especificado
+        animator.SetBool("atacar", false); // Desactiva la animación de ataque
     }
 
     void ResetAttack()
