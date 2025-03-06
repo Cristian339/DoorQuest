@@ -100,17 +100,18 @@ public class Player : MonoBehaviour
         livebar.value = liveSystem.Lives / 100f;
     }
 
-    private void DieForFall()
-    {
-        transform.position = positionBeforeFall;
-        OnDieByFall?.Invoke();
-    }
+private void DieForFall()
+{
+    transform.position = positionBeforeFall;
+    liveSystem.TakeDamage(trapsDamage); 
+    OnDieByFall?.Invoke();
+}
 
     public void FallInTrap()
     {
         anim.SetTrigger("hit");
 
-        if (Convert.ToInt32(rb.linearVelocity.y) != 0)
+        if (Mathf.Abs(rb.linearVelocity.y) > 0)
         {
             rb.AddForce(Vector3.up * repulseForceWhenVertical, ForceMode2D.Impulse);
         }
@@ -217,7 +218,7 @@ public class Player : MonoBehaviour
         rb.linearVelocity = Vector3.zero;
         anim.SetTrigger("die");
         audioSource.PlayOneShot(playerDeadSound);
-        if (rb != null) rb.simulated = false;
+        rb.simulated = false;
 
         foreach (var script in GetComponents<MonoBehaviour>())
         {
