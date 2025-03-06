@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -68,7 +67,6 @@ public class Player : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (pause) return;
@@ -149,7 +147,7 @@ private void DieForFall()
         }
     }
 
-    // Se ejecuta desde evento de animaci�n
+    // Se ejecuta desde evento de animación
     private void Attack()
     {
         Collider2D[] touchedColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, damageable);
@@ -157,7 +155,10 @@ private void DieForFall()
         foreach (Collider2D collider in touchedColliders)
         {
             Enemy enemy = collider.GetComponent<Enemy>();
-            enemy.Hit(attackAmount, transform.right);
+            if (enemy != null)
+            {
+                enemy.Hit(attackAmount, transform.right);  // Aplicamos daño al enemigo.
+            }
         }
     }
 
